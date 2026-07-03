@@ -1,5 +1,5 @@
 import "./WhyChooseUs.css";
-import { features } from "../../data/features";
+import { features } from "../../../data/features";
 
 const WhyChooseUs = () => {
   return (

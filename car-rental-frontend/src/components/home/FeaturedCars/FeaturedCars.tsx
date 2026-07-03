@@ -2,7 +2,7 @@ import "./FeaturedCars.css";
 
 import CarCard from "../CarCard";
 
-import { cars } from "../../data/cars";
+import { cars } from "../../../data/cars";
 
 const FeaturedCars = () => {
   return (
