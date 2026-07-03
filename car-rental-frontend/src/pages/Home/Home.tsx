@@ -4,6 +4,7 @@ import SearchBox from "../../components/SearchBox";
 import FeaturedCars from "../../components/FeaturedCars";
 import WhyChooseUs from "../../components/WhyChooseUs";
 import Testimonials from "../../components/Testimonials";
+import CTA from "../../components/CTA";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <FeaturedCars />
       <WhyChooseUs />
       <Testimonials />
+      <CTA />
     </>
   );
 };

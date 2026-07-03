@@ -1,0 +1,70 @@
+.cta{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:120px auto;
+
+    padding:80px;
+
+    border-radius:25px;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #1E3A8A
+    );
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.cta-content h2{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.cta-content p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+    color:#E2E8F0;
+
+}
+
+.cta button{
+
+    background:white;
+
+    color:#2563EB;
+
+    padding:16px 40px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.cta button:hover{
+
+    transform:translateY(-3px);
+
+}
