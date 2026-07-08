@@ -1,33 +1,20 @@
 import "./SectionTitle.css";
 
-interface Props{
-
-title:string;
-
-subtitle:string;
-
+interface SectionTitleProps {
+  subtitle: string;
+  title: string;
 }
 
-const SectionTitle=({
+const SectionTitle = ({ subtitle, title }: SectionTitleProps) => {
+  return (
+    <div className="section-title">
 
-title,
+      <span>{subtitle}</span>
 
-subtitle
+      <h2>{title}</h2>
 
-}:Props)=>{
-
-return(
-
-<div className="section-title">
-
-<h2>{title}</h2>
-
-<p>{subtitle}</p>
-
-</div>
-
-);
-
-}
+    </div>
+  );
+};
 
 export default SectionTitle;
