@@ -1,0 +1,64 @@
+.register-page{
+    min-height:100vh;
+    background:#F8FAFC;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.register-card{
+    width:100%;
+    max-width:500px;
+    background:#fff;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.register-card h1{
+    text-align:center;
+    color:#2563EB;
+    margin-bottom:10px;
+}
+
+.register-card h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.register-card>p{
+    text-align:center;
+    color:#64748B;
+    margin-bottom:30px;
+}
+
+.terms{
+    margin:20px 0;
+}
+
+.terms label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+.register-btn{
+    width:100%;
+}
+
+.register-btn button{
+    width:100%;
+}
+
+.login-link{
+    margin-top:25px;
+    text-align:center;
+}
+
+.login-link a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:600;
+}

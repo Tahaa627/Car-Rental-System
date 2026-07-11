@@ -30,7 +30,7 @@ const Login = () => {
 
                 <h1>Velocis</h1>
 
-                <h2>Welcome Back 👋</h2>
+                <h2>Welcome Back </h2>
 
                 <p>
                     Sign in to continue your journey.
