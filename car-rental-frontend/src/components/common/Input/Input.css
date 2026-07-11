@@ -1,0 +1,31 @@
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+.input-field input:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 4px rgba(37,99,235,.12);
+}
+
+.input-field input::placeholder {
+    color: #94A3B8;
+}
