@@ -1,45 +1,68 @@
 import "./SearchBox.css";
 
+import Container from "../../common/Container";
+import Button from "../../common/Button";
+
 const SearchBox = () => {
   return (
-    <div className="search-box">
+    <section className="search-section">
+      <Container>
 
-      <div className="search-field">
-        <label>Location</label>
-        <input
-          type="text"
-          placeholder="Enter pickup location"
-        />
-      </div>
+        <div className="search-box">
 
-      <div className="search-field">
-        <label>Pick-up</label>
-        <input type="date" />
-      </div>
+          <div className="input-group">
+            <label>Pickup Location</label>
+            <input
+              type="text"
+              placeholder="Enter city"
+            />
+          </div>
 
-      <div className="search-field">
-        <label>Return</label>
-        <input type="date" />
-      </div>
+          <div className="input-group">
+            <label>Return Location</label>
+            <input
+              type="text"
+              placeholder="Enter city"
+            />
+          </div>
 
-      <div className="search-field">
-        <label>Vehicle</label>
+          <div className="input-group">
+            <label>Pickup Date</label>
+            <input type="date" />
+          </div>
 
-        <select>
-          <option>All Cars</option>
-          <option>Sedan</option>
-          <option>SUV</option>
-          <option>Luxury</option>
-          <option>Electric</option>
-        </select>
+          <div className="input-group">
+            <label>Return Date</label>
+            <input type="date" />
+          </div>
 
-      </div>
+          <div className="input-group">
+            <label>Car Type</label>
 
-      <button className="search-btn">
-        Search Cars
-      </button>
+            <select>
 
-    </div>
+              <option>Any</option>
+
+              <option>Sedan</option>
+
+              <option>SUV</option>
+
+              <option>Luxury</option>
+
+              <option>Sports</option>
+
+            </select>
+
+          </div>
+
+          <Button>
+            Search 
+          </Button>
+
+        </div>
+
+      </Container>
+    </section>
   );
 };
 

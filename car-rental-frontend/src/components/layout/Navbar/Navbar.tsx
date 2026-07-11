@@ -1,9 +1,17 @@
 import "./Navbar.css";
+import { useState } from "react";
 
 import Container from "../../common/Container";
 import Button from "../../common/Button";
 
 const Navbar = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="navbar">
 
@@ -12,16 +20,13 @@ const Navbar = () => {
         <div className="navbar-content">
 
           {/* Logo */}
-
           <div className="logo">
             <h2>Velocis</h2>
           </div>
 
           {/* Navigation */}
-
-          <nav>
-
-            <ul className="nav-links">
+          <nav className={isMenuOpen ? "nav-menu active" : "nav-menu"}>
+            <ul>
 
               <li><a href="#">Home</a></li>
 
@@ -34,12 +39,10 @@ const Navbar = () => {
               <li><a href="#">Contact</a></li>
 
             </ul>
-
           </nav>
 
           {/* Buttons */}
-
-          <div className="navbar-buttons">
+          <div className="nav-buttons">
 
             <Button variant="secondary">
               Login
@@ -49,6 +52,14 @@ const Navbar = () => {
               Book Now
             </Button>
 
+          </div>
+
+          {/* Mobile Menu */}
+          <div
+            className="menu-toggle"
+            onClick={toggleMenu}
+          >
+            ☰
           </div>
 
         </div>
