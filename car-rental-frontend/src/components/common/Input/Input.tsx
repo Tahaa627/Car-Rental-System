@@ -1,4 +1,5 @@
 import "./Input.css";
+import { useState } from "react";
 
 interface InputProps {
   label: string;
@@ -15,16 +16,41 @@ const Input = ({
   value,
   onChange,
 }: InputProps) => {
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  const inputType =
+    type === "password"
+      ? showPassword
+        ? "text"
+        : "password"
+      : type;
+
   return (
     <div className="input-field">
+
       <label>{label}</label>
 
-      <input
-        type={type}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-      />
+      <div className="input-wrapper">
+
+        <input
+          type={inputType}
+          placeholder={placeholder}
+          value={value}
+          onChange={onChange}
+        />
+
+        {type === "password" && (
+          <span
+            className="toggle-password"
+            onClick={() => setShowPassword(!showPassword)}
+          >
+            {showPassword ? "🙈" : "👁"}
+          </span>
+        )}
+
+      </div>
+
     </div>
   );
 };
